@@ -26,7 +26,7 @@ public class ChannelTest {
 		while (bytesRead != -1) {
 			System.out.println("Read " + bytesRead);
 			//使缓冲区为一系列新的通道写入或相对获取 操作做好准备：它将限制设置为当前位置，然后将位置设置为 0
-			//为了保证从缓冲区的其实位置开始读取数据，必须将position归0，同时将读取的最高位置设置为当前position的位置
+			//为了保证从缓冲区的起始位置开始读取数据，必须将position归0，同时将读取的最高位置设置为当前position的位置
 			buf.flip();
 		
 			//读取缓冲区的数据
