@@ -11,10 +11,10 @@ import java.nio.channels.FileChannel;
  * @since 2016-02-27
  *
  */
-public class ChannelTest {
+public class FileChannelTest {
 
 	public static void main(String[] args) throws Exception {
-		//获取一个FileChannel
+		//获取一个FileChannel（可以通过InputStream、OutputStream或RandomAccessFile来获取一个FileChannel实例）
 		RandomAccessFile aFile = new RandomAccessFile("note.txt", "rw");
 		FileChannel inChannel = aFile.getChannel();
 
